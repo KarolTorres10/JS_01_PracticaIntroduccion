@@ -30,7 +30,8 @@ else {
 }
 */
 
-const lista = Number(prompt("Escribe el numero limite de tu lista:"));
+/*Numeros Pares*/
+const lista = Number(prompt("¿Hasta que numero te gustaria saber los numeros pares?"));
 
 const numerosPares = []; 
 
@@ -46,21 +47,25 @@ console.log(numerosPares);
 
 
 
-/*Intento de Numeros Primos / WIP
+/*Numeros Primos*/
+const limit = Number(prompt("Escribe el numero limite de tu lista para saber los numeros primos:"));
 
-const limit = Number(prompt("Escribe el numero limite de tu lista:"));
+const numerosPrimos = []; 
 
-const limit = numero => {
-    
-    if (numero <= 1) return false;
+for (let i = 2; i <= limit; i++) {
 
-    for (let i = 2; i < numero; i++){
-        if (numero % i === 0){
-            return;
+let esPrimo = true;
+
+    for(let j = 2; j <= Math.sqrt(i); j++){
+
+        if (i % j === 0){
+            esPrimo = false;
+            break;
         }
     }
-    return true;
+    if (esPrimo){
+        numerosPrimos.push(i);
+    }
 }
 
-console.log(limit(12));
-*/
+console.log(numerosPrimos);
