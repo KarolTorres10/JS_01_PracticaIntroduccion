@@ -9,6 +9,8 @@ function Proyecto() {console.log(proyectofavorito);}
 function saludar(name) {console.log("Hola "+name);}
 */
 
+
+
 /*Ejercicio Condicional
 const limitage = 18;
 
@@ -30,7 +32,9 @@ else {
 }
 */
 
-/*Numeros Pares*/
+
+
+/*Numeros Pares
 const lista = Number(prompt("¿Hasta que numero te gustaria saber los numeros pares?"));
 
 const numerosPares = []; 
@@ -43,11 +47,11 @@ for (let i = 1; i <= lista; i++) {
 }
 
 console.log(numerosPares);
+*/
 
 
 
-
-/*Numeros Primos*/
+/*Numeros Primos
 const limit = Number(prompt("Escribe el numero limite de tu lista para saber los numeros primos:"));
 
 const numerosPrimos = []; 
@@ -69,3 +73,56 @@ let esPrimo = true;
 }
 
 console.log(numerosPrimos);
+*/
+
+
+
+/*Estructura de un objeto
+let pokemon1= {
+    name: "Squirtle",
+    type: "Agua",
+    number: 4,
+    description: "Tortuga de agua que lanza chorros de agua."
+};
+*/
+
+
+/*Arreglo*/
+let LAIKA_movies = [
+{
+    name: "Coraline",
+    genero: "Fantasia, Terror, Aventura",
+    ano: 2009,
+    description: "Una niña que descubre una puerta secreta hacia una versión idealizada pero siniestra de su hogar."
+},
+{
+    name: "ParaNorman",
+    genero: "Fantasia, Terror, Aventura",
+    ano: 2012,
+    description: "Un niño capaz de hablar con los muertos que debe salvar a su pueblo de una maldición de zombis."
+},
+{
+    name: "Los Boxtrolls",
+    genero: "Comedia, Fantasia, Aventura",
+    ano: 2014,
+    description: "Un niño huerfano criado por una comunidad de simpaticos recolectores de basura subterraneos."
+},
+{
+    name: "KUBO",
+    genero: "Fantasia epica, Accion, Aventura",
+    ano: 2016,
+    description: "Una aventura epica en el Japon feudal donde un niño con un poder musical debe proteger a su familia."
+},
+{
+    name: "Mr. Link",
+    genero: "Comedia, Aventura",
+    ano: 2019,
+    description: "Una comedia de viajes sobre un investigador que busca demostrar la existencia de Pie Grande."
+},
+];
+
+console.log(LAIKA_movies[0].name);
+console.log(LAIKA_movies[1].genero);
+console.log(LAIKA_movies[2].description);
+
+console.log("LAIKA tiene un total de " + LAIKA_movies.length + " peliculas en su filmografia.");
