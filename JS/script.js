@@ -91,38 +91,32 @@ let pokemon1= {
 let LAIKA_movies = [
 {
     name: "Coraline",
-    genero: "Fantasia, Terror, Aventura",
+    genero: "Fantasia",
     ano: 2009,
     description: "Una niña que descubre una puerta secreta hacia una versión idealizada pero siniestra de su hogar."
 },
 {
     name: "ParaNorman",
-    genero: "Fantasia, Terror, Aventura",
+    genero: "Terror",
     ano: 2012,
     description: "Un niño capaz de hablar con los muertos que debe salvar a su pueblo de una maldición de zombis."
 },
 {
     name: "Los Boxtrolls",
-    genero: "Comedia, Fantasia, Aventura",
+    genero: "Aventura",
     ano: 2014,
     description: "Un niño huerfano criado por una comunidad de simpaticos recolectores de basura subterraneos."
 },
 {
     name: "KUBO",
-    genero: "Fantasia epica, Accion, Aventura",
+    genero: "Aventura",
     ano: 2016,
     description: "Una aventura epica en el Japon feudal donde un niño con un poder musical debe proteger a su familia."
 },
 {
     name: "Mr. Link",
-    genero: "Comedia, Aventura",
+    genero: "Comedia",
     ano: 2019,
     description: "Una comedia de viajes sobre un investigador que busca demostrar la existencia de Pie Grande."
 },
 ];
-
-console.log(LAIKA_movies[0].name);
-console.log(LAIKA_movies[1].genero);
-console.log(LAIKA_movies[2].description);
-
-console.log("LAIKA tiene un total de " + LAIKA_movies.length + " peliculas en su filmografia.");
